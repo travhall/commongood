@@ -3,7 +3,7 @@ import SignupForm from "@/components/SignupForm";
 export default function Home() {
   return (
     <div className="min-h-screen bg-stone-50">
-      {/* Skip to main content link */}
+      {/* Skip to main content link for keyboard navigation */}
       <a
         href="#main-content"
         className="absolute left-0 top-0 -translate-y-12 bg-amber-600 px-4 py-2 text-white focus:translate-y-0"
@@ -33,7 +33,7 @@ export default function Home() {
         <div className="mx-auto max-w-4xl px-6 py-16">
           <div className="prose prose-stone max-w-none">
             <h2 className="text-2xl font-bold text-stone-900">
-              What We&rsquo;re Building
+              What We&apos;re Building
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-stone-600">
               CommonGood is offline-capable, privacy-respecting software that
@@ -41,9 +41,9 @@ export default function Home() {
               and maintain communication during disruptions.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-stone-600">
-              We&rsquo;re building in the tradition of community bulletin
-              boards, tool libraries, and neighborhood networks—digital tools
-              that enhance (not replace) human connection.
+              We&apos;re building in the tradition of community bulletin boards,
+              tool libraries, and neighborhood networks—digital tools that
+              enhance (not replace) human connection.
             </p>
           </div>
 
@@ -83,17 +83,34 @@ export default function Home() {
               Phase 0: Building the Human Network First
             </h2>
             <p className="mt-4 text-lg text-stone-700">
-              Before we build software, we&rsquo;re building community. Join us
+              Before we build software, we&apos;re building community. Join us
               to:
             </p>
-            <ul className="mt-4 space-y-2 text-stone-700 list-disc list-inside">
-              <li>Test the SkillSwap concept with physical paper prototypes</li>
-              <li>
-                Meet neighbors interested in local resilience and mutual aid
+            <ul className="mt-4 space-y-2 text-stone-700">
+              <li className="flex items-start">
+                <span className="mr-2">•</span>
+                <span>
+                  Test the SkillSwap concept with physical paper prototypes
+                </span>
               </li>
-              <li>Shape the design of the platform before code is written</li>
-              <li>
-                Learn about offline-first architecture and community sovereignty
+              <li className="flex items-start">
+                <span className="mr-2">•</span>
+                <span>
+                  Meet neighbors interested in local resilience and mutual aid
+                </span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2">•</span>
+                <span>
+                  Shape the design of the platform before code is written
+                </span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2">•</span>
+                <span>
+                  Learn about offline-first architecture and community
+                  sovereignty
+                </span>
               </li>
             </ul>
 
@@ -102,9 +119,9 @@ export default function Home() {
                 Interested in participating?
               </h3>
               <p className="mt-2 text-stone-700">
-                We&rsquo;re gathering neighbors in Minneapolis who want to build
-                resilient local networks. First physical meetup details
-                TBD&mdash;sign up to stay informed.
+                We&apos;re gathering neighbors in Minneapolis who want to build
+                resilient local networks. First physical meetup details TBD—sign
+                up to stay informed.
               </p>
 
               <SignupForm />
@@ -126,10 +143,9 @@ export default function Home() {
                 Your Device as Source of Truth
               </h3>
               <p className="mt-2 text-stone-600">
-                Traditional apps store everything in &ldquo;the
-                cloud&rdquo;—when the server goes down, the app breaks.
-                CommonGood works offline indefinitely because your phone is the
-                authoritative source.
+                Traditional apps store everything in &quot;the cloud&quot;—when
+                the server goes down, the app breaks. CommonGood works offline
+                indefinitely because your phone is the authoritative source.
               </p>
             </div>
 
@@ -138,7 +154,7 @@ export default function Home() {
                 Privacy by Architecture
               </h3>
               <p className="mt-2 text-stone-600">
-                We don&rsquo;t ask you to trust our privacy policy. The
+                We don&apos;t ask you to trust our privacy policy. The
                 architecture makes surveillance impossible—data stays on your
                 device, encrypted, under your control.
               </p>
@@ -176,22 +192,22 @@ export default function Home() {
             <div className="rounded-lg border border-red-200 bg-red-50 p-4">
               <p className="text-sm text-red-900">
                 <span className="font-semibold">Not optimizing for scale:</span>{" "}
-                We&rsquo;re building for trust networks, not transaction volume.
+                We&apos;re building for trust networks, not transaction volume.
               </p>
             </div>
             <div className="rounded-lg border border-red-200 bg-red-50 p-4">
               <p className="text-sm text-red-900">
                 <span className="font-semibold">Not dependent on cloud:</span>{" "}
-                Corporate servers can shut down. Your community&rsquo;s
-                infrastructure shouldn&rsquo;t.
-                {/* cSpell:ignore shouldn */}
+                Corporate servers can shut down. Your community&apos;s
+                infrastructure shouldn&apos;t.
               </p>
+              {/* cSpell:ignore shouldn */}
             </div>
             <div className="rounded-lg border border-red-200 bg-red-50 p-4">
               <p className="text-sm text-red-900">
                 <span className="font-semibold">Not surveillance tech:</span> No
-                analytics, no tracking, no &ldquo;engagement metrics&rdquo;.
-                Just tools.
+                analytics, no tracking, no &quot;engagement metrics&quot;. Just
+                tools.
               </p>
             </div>
           </div>
@@ -208,8 +224,8 @@ export default function Home() {
             This is a learning journey, not a product launch.
           </p>
 
-          <ol className="mt-8 space-y-6">
-            <li className="flex gap-4">
+          <div className="mt-8 space-y-6">
+            <div className="flex gap-4">
               <div className="shrink-0">
                 <div
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-amber-100 font-bold text-amber-900"
@@ -227,9 +243,9 @@ export default function Home() {
                   first. Gathering 20+ interested neighbors.
                 </p>
               </div>
-            </li>
+            </div>
 
-            <li className="flex gap-4">
+            <div className="flex gap-4">
               <div className="shrink-0">
                 <div
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-stone-100 font-bold text-stone-600"
@@ -248,9 +264,9 @@ export default function Home() {
                   learning.
                 </p>
               </div>
-            </li>
+            </div>
 
-            <li className="flex gap-4">
+            <div className="flex gap-4">
               <div className="shrink-0">
                 <div
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-stone-100 font-bold text-stone-600"
@@ -268,9 +284,9 @@ export default function Home() {
                   post sharing. Basic messaging.
                 </p>
               </div>
-            </li>
+            </div>
 
-            <li className="flex gap-4">
+            <div className="flex gap-4">
               <div className="shrink-0">
                 <div
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-stone-100 font-bold text-stone-600"
@@ -288,13 +304,243 @@ export default function Home() {
                   research. True resilience for disruptions.
                 </p>
               </div>
-            </li>
-          </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Resources */}
+      <section className="border-b border-stone-200">
+        <div className="mx-auto max-w-4xl px-6 py-16">
+          <h2 className="text-2xl font-bold text-stone-900">
+            Resources & Learning
+          </h2>
+          <p className="mt-2 text-stone-600">
+            Learn more about local-first architecture, community resilience, and
+            mutual aid practices.
+          </p>
+
+          <div className="mt-8 space-y-8">
+            {/* Local-First Philosophy */}
+            <div>
+              <h3 className="text-lg font-semibold text-stone-900">
+                Understanding Local-First Software
+              </h3>
+              <ul className="mt-3 space-y-2 text-stone-600">
+                <li>
+                  <a
+                    href="https://www.inkandswitch.com/local-first/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-700 hover:text-amber-800 underline"
+                  >
+                    Local-First Software
+                  </a>{" "}
+                  - Essential reading on the philosophy (30 min)
+                </li>
+                <li>
+                  <a
+                    href="https://offlinefirst.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-700 hover:text-amber-800 underline"
+                  >
+                    Offline First Principles
+                  </a>{" "}
+                  - Why offline-capable matters
+                </li>
+                <li>
+                  <a
+                    href="https://crdt.tech/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-700 hover:text-amber-800 underline"
+                  >
+                    CRDTs Explained
+                  </a>{" "}
+                  - Conflict-free data structures for sync
+                </li>
+              </ul>
+            </div>
+
+            {/* Inspiring Projects */}
+            <div>
+              <h3 className="text-lg font-semibold text-stone-900">
+                Projects Built on Similar Principles
+              </h3>
+              <ul className="mt-3 space-y-2 text-stone-600">
+                <li>
+                  <span className="font-medium text-stone-900">
+                    Secure Scuttlebutt
+                  </span>{" "}
+                  - Social network without servers
+                </li>
+                <li>
+                  <span className="font-medium text-stone-900">Briar</span> -
+                  Messaging app for activists (Bluetooth/Tor)
+                </li>
+                <li>
+                  <span className="font-medium text-stone-900">Syncthing</span>{" "}
+                  - File sync without cloud infrastructure
+                </li>
+                {/* cSpell:ignore Syncthing */}
+                <li>
+                  <span className="font-medium text-stone-900">Delta Chat</span>{" "}
+                  - Email-based messenger with encryption
+                </li>
+              </ul>
+            </div>
+
+            {/* Minneapolis Resources */}
+            <div>
+              <h3 className="text-lg font-semibold text-stone-900">
+                Minneapolis Mutual Aid & Community Networks
+              </h3>
+              <ul className="mt-3 space-y-2 text-stone-600">
+                <li>
+                  <a
+                    href="https://www.littlefreelibrary.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-700 hover:text-amber-800 underline"
+                  >
+                    Little Free Library
+                  </a>{" "}
+                  - Neighborhood book sharing
+                </li>
+                <li>
+                  <a
+                    href="https://www.hennepin.us/residents/emergencies-safety"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-700 hover:text-amber-800 underline"
+                  >
+                    Hennepin County Emergency Management
+                  </a>{" "}
+                  - Local preparedness resources
+                </li>
+                <li>
+                  <span className="font-medium text-stone-900">
+                    Buy Nothing Groups
+                  </span>{" "}
+                  - Hyperlocal gifting networks (search your neighborhood)
+                </li>
+                {/* cSpell:ignore BuyNothing Hyperlocal */}
+                <li>
+                  <span className="font-medium text-stone-900">
+                    Tool Libraries
+                  </span>{" "}
+                  - Community tool sharing programs
+                </li>
+              </ul>
+            </div>
+
+            {/* Technical Resources */}
+            <div>
+              <h3 className="text-lg font-semibold text-stone-900">
+                For Developers & Technical Contributors
+              </h3>
+              <ul className="mt-3 space-y-2 text-stone-600">
+                <li>
+                  <a
+                    href="https://docs.hivedb.dev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-700 hover:text-amber-800 underline"
+                  >
+                    Hive Database
+                  </a>{" "}
+                  - Offline-first database for Flutter
+                </li>
+                <li>
+                  <a
+                    href="https://flutter.dev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-700 hover:text-amber-800 underline"
+                  >
+                    Flutter
+                  </a>{" "}
+                  - Cross-platform mobile framework
+                </li>
+                <li>
+                  <a
+                    href="https://supabase.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-700 hover:text-amber-800 underline"
+                  >
+                    Supabase
+                  </a>{" "}
+                  - Open source backend (for Phase 2+ sync)
+                </li>
+                {/* cSpell:ignore Supabase */}
+                <li>
+                  <a
+                    href="https://github.com/commongood"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-700 hover:text-amber-800 underline"
+                  >
+                    GitHub Repository
+                  </a>{" "}
+                  - Source code (when released)
+                </li>
+              </ul>
+            </div>
+
+            {/* Community Organizing */}
+            <div>
+              <h3 className="text-lg font-semibold text-stone-900">
+                Community Organizing & Mutual Aid
+              </h3>
+              <ul className="mt-3 space-y-2 text-stone-600">
+                <li>
+                  <a
+                    href="https://mutualaiddisasterrelief.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-700 hover:text-amber-800 underline"
+                  >
+                    Mutual Aid Disaster Relief
+                  </a>{" "}
+                  - Grassroots disaster response principles
+                </li>
+                <li>
+                  <a
+                    href="https://timebanks.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-700 hover:text-amber-800 underline"
+                  >
+                    Time Banking
+                  </a>{" "}
+                  - Hour-for-hour skill exchange model
+                </li>
+                <li>
+                  <span className="font-medium text-stone-900">
+                    Community Resilience Planning
+                  </span>{" "}
+                  - Building neighborhood preparedness
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-10 rounded-lg border border-amber-200 bg-amber-50 p-6">
+            <p className="text-sm text-stone-700">
+              <span className="font-semibold">Building in public:</span> As we
+              develop CommonGood, we&apos;ll share learning resources, design
+              decisions, and technical documentation here. Check back for
+              updates on architecture patterns, offline-first development, and
+              community organizing insights.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="border-b border-stone-200">
+      <section className="border-b border-stone-200 bg-white">
         <div className="mx-auto max-w-4xl px-6 py-16">
           <h2 className="text-2xl font-bold text-stone-900">Questions</h2>
 
@@ -316,10 +562,10 @@ export default function Home() {
                 How is this different from other community apps?
               </dt>
               <dd className="mt-2 text-stone-600">
-                Most apps treat offline mode as an afterthought. We&rsquo;re
+                Most apps treat offline mode as an afterthought. We&apos;re
                 building offline-first from day one—your device is the source of
-                truth, sync is optional enhancement. This isn&rsquo;t a feature,
-                it&rsquo;s philosophy.
+                truth, sync is optional enhancement. This isn&apos;t a feature,
+                it&apos;s philosophy.
               </dd>
             </div>
 
@@ -328,8 +574,8 @@ export default function Home() {
                 When can I download the app?
               </dt>
               <dd className="mt-2 text-stone-600">
-                We&rsquo;re in Phase 0 (community building). The app development
-                starts in Month 1-3. This is deliberate—we&rsquo;re building the
+                We&apos;re in Phase 0 (community building). The app development
+                starts in Month 1-3. This is deliberate—we&apos;re building the
                 human network first, validating the concept with physical
                 prototypes before writing code.
               </dd>
@@ -337,13 +583,13 @@ export default function Home() {
 
             <div>
               <dt className="font-semibold text-stone-900">
-                Is this free? What&rsquo;s the business model?
+                Is this free? What&apos;s the business model?
               </dt>
               <dd className="mt-2 text-stone-600">
                 Free forever. Open source. No monetization, no ads, no data
                 selling. This is community infrastructure, not a business. Think
-                of it like a community garden or tool library&mdash;sustained by
-                those who use it.
+                of it like a community garden or tool library—sustained by those
+                who use it.
               </dd>
             </div>
 
@@ -361,22 +607,20 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-stone-800 text-stone-100">
+      <footer className="bg-stone-800 text-stone-300">
         <div className="mx-auto max-w-4xl px-6 py-12">
           <div className="flex flex-col gap-6 sm:flex-row sm:justify-between">
             <div>
               <h3 className="text-lg font-semibold text-white">CommonGood</h3>
-              <p className="mt-2 text-sm text-stone-300">
+              <p className="mt-2 text-sm">
                 Community infrastructure for mutual aid.
               </p>
-              <p className="mt-1 text-sm text-stone-300">
-                Minneapolis, Minnesota
-              </p>
+              <p className="mt-1 text-sm">Minneapolis, Minnesota</p>
             </div>
 
             <div>
               <h4 className="text-sm font-semibold text-white">Contact</h4>
-              <p className="mt-2 text-sm text-stone-300">
+              <p className="mt-2 text-sm">
                 <a
                   href="mailto:hello@commongood.community"
                   className="hover:text-white transition-colors underline"
@@ -397,7 +641,7 @@ export default function Home() {
               under AGPL-3.0.
             </p>
             <p className="mt-2">
-              We&rsquo;re building this in public. All decisions, designs, and
+              We&apos;re building this in public. All decisions, designs, and
               code will be transparent and auditable.
             </p>
           </div>
